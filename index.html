@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightPool</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="upper">
+        <div class="header">
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="/"><img src="img/logo.png" alt="logo_flighpool"></a>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__list"><a href="#promotions">Акции</a></li>
+                        <li class="menu__list"><a href="/login">Войти</a></li>
+                        <li class="menu__list"><a href="/register">Регистрация на рейс</a></li>
+                        <li class="menu__list"><a href="/profile">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="promo">
+                <div class="promo__info">
+                    <h1>Мы сближаем города, <br> вы - живете там, где хотите</h1>
+                </div>
+                <div class="search__wrapper">
+                    <div class="search">
+                        <form action="" method="get">
+                            <input class="input" type="text" name="from" id="from" placeholder="Откуда" require>
+                            <input class="input" type="text" name="to" id="to" placeholder="Куда" require>
+                            <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда" require>
+                            <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно" require>
+                            <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" placeholder="Количество пассажиров" require>
+                            <input class="btn" type="submit" value="Найти">   
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="promotions">
+        <div class="container">
+            <h2>Доступные акции</h2>
+            <div class="promotions__wrap">
+                <div class="promotions__item">
+                    <div class="item__img">
+                        <img src="img/promotion1.jpg" alt="promotion1.jpg">
+                    </div>
+                    <div class="item__info">
+                        <div class="item__info_one">
+                            <div class="item__header">Returning and Changing Your Tickets</div>
+                            <div class="item__descr">
+                                The pandemic has changed many travelers’ plans, but we know that it will not last forever. 
+                                Once all of this is over, we will continue exploring this world the way we used to. 
+                                Special rules that have been developed for this challenging situation will help you cancel your trip
+                                or postpone it until later.
+                            </div>
+                        </div>
+                        <div class="item__button">
+                            <a href="#"><button class="btn-oth">Посмотреть</button></a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="promotions__item">
+                    <div class="item__img">
+                        <img src="img/promotion2.jpg" alt="promotion2.jpg">
+                    </div>
+                    <div class="item__info">
+                        <div class="item__info_one">
+                            <div class="item__header">Best offers</div>
+                            <div class="item__descr">
+                                To see again the streets that witnessed so much. To hug your beloved ones and look back to see
+    what you’ve come through. And to think of new dreams that will be so special!
+                            </div>
+                        </div>
+                        <div class="item__button">
+                            <a href="#"><button class="btn-oth">Посмотреть</button></a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="promotions__item">
+                    <div class="item__img">
+                        <img src="img/promotion3.jpg" alt="promotion3.jpg">
+                    </div>
+                    <div class="item__info">
+                        <div class="item__info_one">
+                            <div class="item__header">See you more often</div>
+                            <div class="item__descr">
+                                Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+    see your loved ones more often. Choose our company to fly to where you are always expected.
+                            </div>
+                        </div>
+                        <div class="item__button">
+                            <a href="#"><button class="btn-oth">Посмотреть</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotions__item">
+                    <div class="item__img">
+                        <img src="img/promotion4.jpg" alt="promotion4.jpg">
+                    </div>
+                    <div class="item__info">
+                        <div class="item__info_one">
+                            <div class="item__header">Everything is on again</div>
+                            <div class="item__descr">
+                                From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+    a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week.
+                            </div>
+                        </div>
+                        <div class="item__button">
+                            <a href="#"><button class="btn-oth">Посмотреть</button></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="follow">
+        <div class="container">
+            <div class="follow__info">
+                <h2>Подписаться на закрытые акции</h2>
+                <span>Каждую неделю мы рассылаем более ста акционных промокодов для полеты в разные направления</span>
+            </div>
+            <div class="follow__wrapper">
+                <form action="" method="POST">
+                    <input class="input" type="email" name="email" placeholder="Ваша электронная почта в формате ivanov@ivan.ru" required>
+                    <input class="btn" type="submit" value="Подписаться">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
