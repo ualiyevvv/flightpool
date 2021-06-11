@@ -16,10 +16,10 @@
                         <a href="/"><img src="img/logo.png" alt="logo_flighpool"></a>
                     </div>
                     <ul class="menu">
-                        <li class="menu__list"><a href="#promotions">Акции</a></li>
-                        <li class="menu__list"><a href="/login">Войти</a></li>
-                        <li class="menu__list"><a href="/register">Регистрация на рейс</a></li>
-                        <li class="menu__list"><a href="/profile">Личный кабинет</a></li>
+                        <li class="menu__list"><a href="index.html#promotions">Акции</a></li>
+                            <li class="menu__list"><a href="/login.html">Войти</a></li>
+                            <li class="menu__list"><a href="/register.html">Регистрация на рейс</a></li>
+                            <li class="menu__list"><a href="/profile.html">Личный кабинет</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,11 +33,11 @@
                 <div class="search__wrapper">
                     <div class="search">
                         <form action="" method="get">
-                            <input class="input" type="text" name="from" id="from" placeholder="Откуда" require>
-                            <input class="input" type="text" name="to" id="to" placeholder="Куда" require>
-                            <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда" require>
-                            <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно" require>
-                            <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" placeholder="Количество пассажиров" require>
+                            <input class="input" type="text" name="from" id="from" placeholder="Откуда" required>
+                            <input class="input" type="text" name="to" id="to" placeholder="Куда" required>
+                            <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда" required>
+                            <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно" required>
+                            <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" placeholder="Количество пассажиров" required>
                             <input class="btn" type="submit" value="Найти">   
                         </form>
                     </div>
@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section class="promotions">
+    <section class="promotions" id="promotions">
         <div class="container">
             <h2>Доступные акции</h2>
             <div class="promotions__wrap">
@@ -141,7 +141,38 @@
 
 
     <footer>
-
+        <div class="container">
+            <div class="footer_nav">
+                <nav>
+                    <div class="logo">
+                        <a href="/"><img src="img/logo.png" alt="logo_flighpool"></a>
+                    </div>
+                    <ul class="footer__menu">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="/register.html">Sign up</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/news">News</a>
+                        </li>
+                        <li>
+                            <a href="/return">Return</a>
+                        </li>
+                        <li>
+                            <a href="/feedback">Feedback</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </footer>
 
 <script src="js/main.js"></script>

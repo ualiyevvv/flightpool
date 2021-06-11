@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightPool</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="search__result">
+            <div class="header">
+                <div class="container">
+                    <nav>
+                        <div class="logo">
+                            <a href="/"><img src="img/logo.png" alt="logo_flighpool"></a>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__list"><a href="index.html#promotions">Акции</a></li>
+                            <li class="menu__list"><a href="/login.html">Войти</a></li>
+                            <li class="menu__list"><a href="/register.html">Регистрация на рейс</a></li>
+                            <li class="menu__list"><a href="/profile.html">Личный кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    
+            <div class="promo">
+                <div class="container">
+                    <div class="search__wrapper">
+                        <div class="search">
+                            <form action="" method="get">
+                                <input class="input" type="text" name="from" id="from" placeholder="Откуда" required>
+                                <input class="input" type="text" name="to" id="to" placeholder="Куда" required>
+                                <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда" required>
+                                <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно" required>
+                                <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" placeholder="Количество пассажиров" required>
+                                <input class="btn" type="submit" value="Найти">   
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="container">
+                    <div class="result__item">
+                        <div class="result__item-info">
+                            Номер рейса < .test-4-fn >
+                            Воздушное судно < .test-4-at >
+                        </div>
+                        <div class="result__item-date">
+                            <div class="result__item-date__from">
+                                ● Время вылета < .test-4-dt >
+                                <span>Дата вылета < .test-4-dd ></span>
+                            </div>
+                            <div class="result__item-date__to">
+                                Время прилета < .test-4-at >
+                                ● Время в пути < .test-4-ft >                                
+                            </div>
+                        </div>
+                        <div class="result__item-price">
+                            Стоимость < .test-4-fp >
+                            ● Вероятность вылета < .test-4-fh >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <div class="footer_nav">
+                    <nav>
+                        <div class="logo">
+                            <a href="/"><img src="img/logo.png" alt="logo_flighpool"></a>
+                        </div>
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="/register.html">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="/contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="/news">News</a>
+                            </li>
+                            <li>
+                                <a href="/return">Return</a>
+                            </li>
+                            <li>
+                                <a href="/feedback">Feedback</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+
+<script src="js/main.js"></script>
+</body>
+</html>
