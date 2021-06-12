@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightPool</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="profile">
+            <div class="header header-oth">
+                <div class="container">
+                    <nav>
+                        <div class="logo">
+                            <a href="/"><img src="img/logo.png" alt="logo_flighpool"></a>
+                        </div>
+                        <ul class="menu">
+                            <li class="menu__list"><a href="index.html#promotions">Акции</a></li>
+                            <li class="menu__list"><a href="login.html">Войти</a></li>
+                            <li class="menu__list"><a href="register.html">Регистрация на рейс</a></li>
+                            <li class="menu__list"><a href="profile.html">Личный кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="profile__wrapper">
+                    <div class="profile__header">
+                        <h2>Бронировние рейса</h2>
+                    </div>
+                    <div class="booking__wrapper">
+                        <div class="book">
+                            <div class="booking">
+                                <div class="book__header">
+                                    <div class="book__header-title">Уральск — Алматы</div>
+                                    <div class="book__header-date">туда 18 июня</div>
+                                </div>
+                                <div class="book__tablo">
+                                    <div class="result__item-date">
+                                        <div class="result__item-date__from">
+                                            <span class="time">10:10</span>
+                                            <span>Уральск</span>
+                                            <span>2021-06-18</span>
+                                        </div>
+                                        <span class="result__hr"></span>
+                                        <div class="result__item-date__to">
+                                            <span class="time">13:10</span>
+                                            <span>Алматы </span>                              
+                                            <span>2021-06-21</span>                              
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking">
+                                <div class="book__header">
+                                    <div class="book__header-title">Алматы — Уральск</div>
+                                    <div class="book__header-date">обратно 21 июня</div>
+                                </div>
+                                <div class="book__tablo">
+                                    <div class="result__item-date">
+                                        <div class="result__item-date__from">
+                                            <span class="time">10:10</span>
+                                            <span>Уральск</span>
+                                            <span>2021-06-18</span>
+                                        </div>
+                                        <span class="result__hr"></span>
+                                        <div class="result__item-date__to">
+                                            <span class="time">13:10</span>
+                                            <span>Алматы </span>                              
+                                            <span>2021-06-21</span>                              
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="passengers__add">
+                            <div class="passengers__add-block">
+                                <div class="passengers__add-item">
+                                    Взрослые
+                                </div>
+                                <div class="passengers__add-toggle">
+                                    <span>-</span>
+                                    <b>1</b>
+                                    <span>+</span>
+                                </div>
+                            </div>
+                            <div class="passengers__add-block">
+                                <div class="passengers__add-item">
+                                    Детские
+                                </div>
+                                <div class="passengers__add-toggle">
+                                    <span>-</span>
+                                    <b>1</b>
+                                    <span>+</span>
+                                </div>
+                            </div>
+                            <div class="passengers__add-block">
+                                <div class="passengers__add-item">
+                                    Младенцы
+                                </div>
+                                <div class="passengers__add-toggle">
+                                    <span>-</span>
+                                    <b>0</b>
+                                    <span>+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="passengers">
+                            <div class="person">
+                                <div class="passengers__header">
+                                    <div class="passengers__header-title">Пассажир №1</div>
+                                    <div class="passengers__header-age">Взрослый</div>
+                                </div>
+                                <div class="passengers__info">
+                                    <div class="passengers__info-row">
+                                        <div class="passengers__info-block">
+                                            <label for="name">Имя</label>
+                                            <input type="text" name="name" id="name" required>
+                                        </div>
+                                        <div class="passengers__info-block">
+                                            <label for="name">Фамилию</label>
+                                            <input type="text" name="name" id="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="passengers__info-row">
+                                        <div class="passengers__info-block">
+                                            <label for="date">Дата рождения</label>
+                                            <input type="date" name="date" id="date" required>
+                                        </div>
+                                        <div class="passengers__info-block">
+                                            <label for="name">Номер документа</label>
+                                            <input type="text" name="name" id="name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="person">
+                                <div class="passengers__header">
+                                    <div class="passengers__header-title">Пассажир №2</div>
+                                    <div class="passengers__header-age">Детский</div>
+                                </div>
+                                <div class="passengers__info">
+                                    <div class="passengers__info-row">
+                                        <div class="passengers__info-block">
+                                            <label for="name">Имя</label>
+                                            <input type="text" name="name" id="name" required>
+                                        </div>
+                                        <div class="passengers__info-block">
+                                            <label for="name">Фамилию</label>
+                                            <input type="text" name="name" id="name" required>
+                                        </div>
+                                    </div>
+                                    <div class="passengers__info-row">
+                                        <div class="passengers__info-block">
+                                            <label for="date">Дата рождения</label>
+                                            <input type="date" name="date" id="date" required>
+                                        </div>
+                                        <div class="passengers__info-block">
+                                            <label for="name">Номер документа</label>
+                                            <input type="text" name="name" id="name" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking__price">
+                            <div class="booking__price-block">
+                                <div class="booking__price-item">Стоимость билетов</div>
+                                <div class="booking__price-item"><span>247 839 T</span></div>
+                            </div>
+                            <div class="booking__price-block">
+                                <a href="booking_management.html"><div class="booking__btn btn">Забронировать</div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <div class="footer_nav">
+                    <nav>
+                        <div class="logo">
+                            <a href="/"><img src="img/logo.png" alt="logo_flighpool"></a>
+                        </div>
+                        <ul class="footer__menu">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="/register.html">Sign up</a>
+                            </li>
+                            <li>
+                                <a href="/contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="/news">News</a>
+                            </li>
+                            <li>
+                                <a href="/return">Return</a>
+                            </li>
+                            <li>
+                                <a href="/feedback">Feedback</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+
+<script src="js/main.js"></script>
+</body>
+</html>
