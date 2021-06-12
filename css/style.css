@@ -664,6 +664,9 @@ footer {
     color: rgb(95, 117, 126);
     width: 50%;
 }
+.passengers__infobook-row a {
+    color: var(--main-color);
+}
 .passengers__infobook-row a:hover {
     color: var(--second-color);
 }
