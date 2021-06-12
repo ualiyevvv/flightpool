@@ -10,7 +10,7 @@
 <body>
     <main>
         <section class="search__result">
-            <div class="header">
+            <div class="header not-sticky">
                 <div class="container">
                     <nav>
                         <div class="logo">
@@ -18,9 +18,9 @@
                         </div>
                         <ul class="menu">
                             <li class="menu__list"><a href="index.html#promotions">Акции</a></li>
-                            <li class="menu__list"><a href="/login.html">Войти</a></li>
-                            <li class="menu__list"><a href="/register.html">Регистрация на рейс</a></li>
-                            <li class="menu__list"><a href="/profile.html">Личный кабинет</a></li>
+                            <li class="menu__list"><a href="login.html">Войти</a></li>
+                            <li class="menu__list"><a href="register.html">Регистрация на рейс</a></li>
+                            <li class="menu__list"><a href="profile.html">Личный кабинет</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -31,11 +31,11 @@
                     <div class="search__wrapper">
                         <div class="search">
                             <form action="" method="get">
-                                <input class="input" type="text" name="from" id="from" placeholder="Откуда" required>
-                                <input class="input" type="text" name="to" id="to" placeholder="Куда" required>
-                                <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда" required>
-                                <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно" required>
-                                <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" placeholder="Количество пассажиров" required>
+                                <input class="input" type="text" name="from" id="from" placeholder="Откуда" value="Уральск" required>
+                                <input class="input" type="text" name="to" id="to" placeholder="Куда" value="Алматы" required>
+                                <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда" value="2021-06-18" required>
+                                <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно" value="2021-06-21" required>
+                                <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" value="4" placeholder="Количество пассажиров" required>
                                 <input class="btn" type="submit" value="Найти">   
                             </form>
                         </div>
@@ -46,24 +46,131 @@
             <div class="result">
                 <div class="container">
                     <div class="result__item">
-                        <div class="result__item-info">
-                            Номер рейса < .test-4-fn >
-                            Воздушное судно < .test-4-at >
-                        </div>
-                        <div class="result__item-date">
-                            <div class="result__item-date__from">
-                                ● Время вылета < .test-4-dt >
-                                <span>Дата вылета < .test-4-dd ></span>
+                        <div class="result__tablo">
+                            <div class="result__item-price center">
+                                <span>Вероятность вылета: </span>90%</span>
                             </div>
-                            <div class="result__item-date__to">
-                                Время прилета < .test-4-at >
-                                ● Время в пути < .test-4-ft >                                
+                            <div class="result__item-date">
+                                <div class="result__item-date__from">
+                                    <span class="time">10:10</span>
+                                    <span>Уральск</span>
+                                    <span>2021-06-18</span>
+                                </div>
+                                <span class="result__hr"></span>
+                                <div class="result__item-date__to">
+                                    <span class="time">13:10</span>
+                                    <span>Алматы </span>                              
+                                    <span>2021-06-21</span>                              
+                                </div>
                             </div>
                         </div>
-                        <div class="result__item-price">
-                            Стоимость < .test-4-fp >
-                            ● Вероятность вылета < .test-4-fh >
+                        <div class="result__tool">
+                            <div class="result__item-top">
+                                <div class="result__item-info">
+                                    <div><span>Номер рейса: </span>AAA-11</div>
+                                    <div><span>Воздушное судно: </span>Boeing-747</div>
+                                </div>
+                            </div>
+                            <div class="result__btn">
+                                <a href="booking.html"><div class="btn">Забронировать за <span>80 000 ₸</span></div></a>    
+                            </div>
                         </div>
+                    </div>
+                    <div class="result__item">
+                        <div class="result__tablo">
+                            <div class="result__item-price center">
+                                <span>Вероятность вылета: </span>90%</span>
+                            </div>
+                            <div class="result__item-date">
+                                <div class="result__item-date__from">
+                                    <span class="time">10:10</span>
+                                    <span>Уральск</span>
+                                    <span>2021-06-18</span>
+                                </div>
+                                <span class="result__hr"></span>
+                                <div class="result__item-date__to">
+                                    <span class="time">13:10</span>
+                                    <span>Алматы </span>                              
+                                    <span>2021-06-21</span>                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result__tool">
+                            <div class="result__item-top">
+                                <div class="result__item-info">
+                                    <div><span>Номер рейса: </span>AAA-11</div>
+                                    <div><span>Воздушное судно: </span>Boeing-747</div>
+                                </div>
+                            </div>
+                            <div class="result__btn">
+                                <a href="booking.html"><div class="btn">Забронировать за <span>80 000 ₸</span></div></a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result__item">
+                        <div class="result__tablo">
+                            <div class="result__item-price center">
+                                <span>Вероятность вылета: </span>90%</span>
+                            </div>
+                            <div class="result__item-date">
+                                <div class="result__item-date__from">
+                                    <span class="time">10:10</span>
+                                    <span>Уральск</span>
+                                    <span>2021-06-18</span>
+                                </div>
+                                <span class="result__hr"></span>
+                                <div class="result__item-date__to">
+                                    <span class="time">13:10</span>
+                                    <span>Алматы </span>                              
+                                    <span>2021-06-21</span>                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result__tool">
+                            <div class="result__item-top">
+                                <div class="result__item-info">
+                                    <div><span>Номер рейса: </span>AAA-11</div>
+                                    <div><span>Воздушное судно: </span>Boeing-747</div>
+                                </div>
+                            </div>
+                            <div class="result__btn">
+                                <a href="booking.html"><div class="btn">Забронировать за <span>80 000 ₸</span></div></a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result__item">
+                        <div class="result__tablo">
+                            <div class="result__item-price center">
+                                <span>Вероятность вылета: </span>90%</span>
+                            </div>
+                            <div class="result__item-date">
+                                <div class="result__item-date__from">
+                                    <span class="time">10:10</span>
+                                    <span>Уральск</span>
+                                    <span>2021-06-18</span>
+                                </div>
+                                <span class="result__hr"></span>
+                                <div class="result__item-date__to">
+                                    <span class="time">13:10</span>
+                                    <span>Алматы </span>                              
+                                    <span>2021-06-21</span>                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="result__tool">
+                            <div class="result__item-top">
+                                <div class="result__item-info">
+                                    <div><span>Номер рейса: </span>AAA-11</div>
+                                    <div><span>Воздушное судно: </span>Boeing-747</div>
+                                </div>
+                            </div>
+                            <div class="result__btn">
+                                <a href="booking.html"><div class="btn">Забронировать за <span>80 000 ₸</span></div></a>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result__more">
+                        <a href="#"><div class="btn-oth">Показать еще 10 билетов</div></a>
                     </div>
                 </div>
             </div>
