@@ -371,6 +371,7 @@ footer {
 } 
 .profile__wrapper {
     margin-top: 100px;
+    margin-bottom: 80px;
 }
 .profile__header h2 {
     text-align: left;
@@ -669,4 +670,40 @@ footer {
 }
 .passengers__infobook-row a:hover {
     color: var(--second-color);
+}
+.seat__wrapper {
+    margin-top: 40px;
+}
+.btn-seat {
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    font-weight: 500;
+}
+.btn-seat:focus {
+    background-color: var(--main-color);
+    color: white;
+}
+.seat-row {
+    display: flex;
+    margin-top: 5px;
+}
+.seat-row:nth-child(2n) {
+    margin-bottom: 20px;
+}
+.seat-block .btn-seat:nth-child(2n+1) {
+    margin-left: 10px;
+}
+/* .seat-block .btn-seat:first-child {
+    margin-left: 0;
+} */
+.seat__btn {
+    margin-top: 30px;
+}
+.seat__btn .btn {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
