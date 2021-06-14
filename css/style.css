@@ -1,5 +1,6 @@
 
 @import url("fonts.css");
+@import url("fontawsome.css");
 :root {
     --main-color: #0c73fe;
     --second-color: #ff7139;
@@ -60,7 +61,7 @@
 .input {
     font-size: 14px;
     font-weight: 400;
-    border: none;
+    border: 1px solid var(--border-color);
     padding: 0 14px;
     height: 60px;
 }
@@ -111,6 +112,18 @@ nav {
 .menu__list:nth-last-child() {
     margin-right: 0;
 }
+.hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+    cursor: pointer;
+}
+            
+                    
 
 .header {
     z-index: 50;
@@ -136,7 +149,9 @@ nav {
 .sticky .menu__list a {
     color: black;
 }
-
+.sticky .hamburger span {
+    background-color: black;
+} 
 
 
 .promo {
@@ -248,7 +263,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-.follow {
+.follow { 
+    text-align: center;
     color: white;
     position: relative;
     padding: 80px 0 160px 0;
@@ -370,6 +386,9 @@ footer {
 .profile .menu__list a {
     color: black;
 } 
+.profile .hamburger span {
+    background-color: black;
+} 
 .profile .menu__list a:hover {
     color: var(--second-color);
 } 
@@ -399,6 +418,9 @@ footer {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 4px;
+}
+.profile .table {
+    overflow: auto;
 }
 
 .profile__booking {
@@ -431,9 +453,6 @@ footer {
     position: relative;
     background-color: var(--main-color) !important;
 }
-.not-sticky a {
-    color: white !important;
-}
 .search__result .search__wrapper {
     padding-top: 0 !important;
 }
@@ -465,7 +484,7 @@ footer {
 .result__tool {
     text-align: center;
     width: 600px;
-    padding: 20px 60px 40px 60px;
+    padding: 20px;
     border-left: 1px solid #a0b0b9;
 }
 .result__btn span {
@@ -486,8 +505,8 @@ footer {
 .result__item-top {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 40px;
 }
 .result__item-info span, .result__item-price span {
@@ -571,21 +590,27 @@ footer {
 
 }
 .passengers__add-block {
-    padding: 20px 83px;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    
+    justify-content: space-between;
     border-right: 1px solid var(--border-color);
+    width: 100%;
 }
 .passengers__add-block:last-child {
     border-right: none;
 }
 .passengers__add-toggle {
-    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    /* margin: 0 30px; */
 }
 .passengers__add-toggle b {
-    margin: 0 8px;
+    width: 45px;
+    /* margin: 0 18px; */
+    text-align: center;
 }
+
 .passengers__add-toggle span {
     font-size: 24px;
     padding: 4px 10px;
@@ -606,7 +631,8 @@ footer {
 }
 .passengers__info-block {
     margin-top: 20px;
-    width: 240px;
+    padding: 0 20px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -661,13 +687,15 @@ footer {
 }
 .book__infobook-row, .passengers__infobook-row {
     display: flex;
-    align-items: center;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content: space-between;
     margin-bottom: 10px;
+    text-align: right;
 }
 .book__infobook-row span, .passengers__infobook-row span {
     color: rgb(95, 117, 126);
     width: 50%;
+    text-align: left;
 }
 .passengers__infobook-row a {
     color: var(--main-color);
@@ -710,4 +738,306 @@ footer {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+}
+
+
+@media (max-width: 1025px) {
+    
+    .menu__list {
+        margin-right: 25px;
+    }
+    .footer__menu li {
+        margin-left: 20px;
+    }
+    
+    .search form {
+       flex-wrap: wrap;
+    }
+    .search input {
+        width: 100% !important;
+        border-radius: 8px !important;
+        margin-bottom: 6px;
+    }
+    .input {
+        height: 60px;
+    }
+    .search {
+        width: 100%;
+    }
+    .search .btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .promotions {
+        padding: 30px 0 50px 0;
+    }
+    .promotions__wrap {
+        margin-top: 25px;
+    }
+    .promotions__item:nth-child(odd) {
+        margin-right: 7px;
+    }
+    .follow {
+        padding: 60px 0 80px 0;
+    }
+
+}
+
+@media (max-width:992px){
+    .not-sticky {
+        position: fixed;
+        background: none !important;
+    }
+    .sticky {
+        background: white !important;
+    }
+    .search__result .promo {
+        padding: 88px 0;
+        position: relative;
+    }
+
+}
+
+@media (max-width:768px){
+    .menu, .footer__menu {
+        /* display: none; */
+    }
+    .menu__list {
+        margin-right: 25px;
+    }
+    .footer__menu li {
+        margin-left: 20px;
+    }
+    
+    .search form {
+       flex-wrap: wrap;
+    }
+    .search input {
+        width: 100% !important;
+        border-radius: 8px !important;
+        margin-bottom: 6px;
+    }
+    .input {
+        height: 60px;
+    }
+    .search {
+        width: 100%;
+    }
+    .search .btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .promotions {
+        padding: 30px 0 50px 0;
+    }
+    .promotions__wrap {
+        margin-top: 25px;
+    }
+    .promotions__item:nth-child(odd) {
+        margin-right: 7px;
+    }
+    .follow {
+        padding: 60px 0 80px 0;
+    }
+    .result__tool .btn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width:576px){
+        
+    .not-sticky a {
+        color: white !important;
+    }
+    .login .promo {
+        padding: 30px 0;
+    }           
+    .profile .menu__list a {
+        color: white;
+    } 
+    .sticky .menu__list a {
+        color: white;
+    }
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: -100%;
+        width: 86%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, .8);
+        z-index: 10;
+        transition: 0.6s all;
+    }
+    .menu_active {
+        left: 0;
+    }
+    .menu li {
+        width: 100%;
+        border: 0;
+        padding-right: 0;
+        padding: 5px 0;
+        margin: 10px 0;
+        text-align: center;
+    }     
+                
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        margin-bottom: 4px;
+        transition: 0.5s all;
+    }
+    .hamburger_active span {
+        margin-bottom: -1px;
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        transition: 0.5s all;
+    }
+    .hamburger_active span:nth-last-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+    .hamburger_active span:nth-last-child(2) {
+        display: none;
+    }
+    .hamburger_active span:nth-last-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+
+    h1 {
+       font-size: 26px; 
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .footer__menu {
+        display: none;
+    }
+    .promo {
+        padding: 80px 0;
+    }
+    .search__wrapper {
+        padding-top: 25px;
+    }
+    .search form {
+        flex-direction: column;
+    }
+    .search input {
+        width: 100% !important;
+        border-radius: 8px !important;
+        margin-bottom: 6px;
+    }
+    .input {
+        height: 60px;
+    }
+    .search {
+        width: 100%;
+    }
+    .search .btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .promotions {
+        padding: 30px 0 25px 0;
+    }
+    .promotions__wrap {
+        margin-top: 15px;
+    }
+    .promotions__item {
+        width: 100%;
+    }
+    .promotions__item:nth-child(odd) {
+        margin-right: 0; 
+    }
+    .promotions__item {
+        margin-bottom: 10px;
+    }
+    .follow {
+        padding: 45px 0 60px 0;
+        text-align: center;
+    }
+    .follow__wrapper form {
+        flex-direction: column;
+    }
+    .follow__wrapper form input {
+        border-radius: 8px !important;
+        margin-bottom: 10px;
+    }
+    .follow__wrapper .btn {
+        border-radius: 8px !important;
+        width: 100%;
+    }
+    .passengers__info-row {
+        flex-direction: column;
+    }
+    .passengers__add {
+        flex-direction: column;
+    }
+    .passengers__add-block {
+        border-right: 0;
+    }
+    .booking__price {
+        flex-direction: column;
+    }
+        
+    .book__infobook, .passengers__infobook {
+        padding: 10px;
+    }
+    .btn-seat {
+        padding: 6px;
+    }
+
+    .result__item {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .result__tablo {
+        width: 100%;
+        padding: 0;
+    }
+    .result__tool {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        border-left: none;
+    }
+    .result__tool .btn {
+        width: 100%;
+        padding: 0;
+    }
+
+    
+}
+
+@media (max-width:320px){
+    
+    h1 {
+       font-size: 23px; 
+    }
+    h2 {
+        font-size: 23px;
+    }
+    .promo {
+        padding: 60px 0;
+    }
+    .input {
+        height: 56px;
+    }
+    .search__wrapper {
+        padding-top: 14px;
+    }
+    .search .btn {
+        margin-top: 6px;
+    }
+    .btn-seat {
+        padding: 3px;
+    }
+    
 }
