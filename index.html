@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>FlightPool</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,13 +38,13 @@
                 </div>
                 <div class="search__wrapper">
                     <div class="search">
-                        <form action="" method="get">
-                            <input class="input" type="text" name="from" id="from" placeholder="Откуда" required>
-                            <input class="input" type="text" name="to" id="to" placeholder="Куда" required>
-                            <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда" required>
-                            <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно" required>
-                            <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" placeholder="Количество пассажиров" required>
-                            <input class="btn" type="submit" value="Найти">   
+                        <form action="search.html" method="get">
+                            <input class="input" type="text" name="from" id="from" placeholder="Откуда">
+                            <input class="input" type="text" name="to" id="to" placeholder="Куда">
+                            <input class="input" type="date" name="dateTo" id="dateTo" placeholder="Туда">
+                            <input class="input" type="date" name="dateFrom" id="dateFrom" placeholder="Обратно">
+                            <input class="input" type="number" min="1" max="8" name="passengers" id="passengers" placeholder="Количество пассажиров">
+                            <input class="btn" type="submit" value="Найти">
                         </form>
                     </div>
                 </div>
