@@ -77,6 +77,7 @@ a {
     height: 100vh;
     background-color: var(--main-color);
     padding: 20px 0;
+    background-attachment: fixed;
 }
 
 nav {
@@ -118,6 +119,9 @@ nav {
     top: 0;
     width: 100%;
     transition: background .2s ease;
+}
+.header-notfix {
+    position: relative;
 }
 
 .header .container {
@@ -340,7 +344,7 @@ footer {
     flex: 0 0 auto;
 }
 .login .promo {
-    padding: 160px 0;
+    padding: 90px 0;
 }
 .login h2 {
     color: white;
